@@ -3,6 +3,9 @@
 
 Natural Language Processing (NLP) is a field of artificial intelligence that focuses on the interaction between computers and humans through natural language. In this repository, we explore basic NLP tasks using the NLTK (Natural Language Toolkit) library in Python.
 
+![image](https://github.com/ThomasHeim11/NLP-Beginner-Guide/assets/106417552/34aa823d-2200-40d3-8d6e-b8ee44123f16)
+
+
 In this repository, you'll find code examples that demonstrate various NLP techniques using NLTK. The examples cover the following topics:
 
 - **Segmentation**: Splitting text into sentences.
