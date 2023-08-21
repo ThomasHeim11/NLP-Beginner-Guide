@@ -1,6 +1,3 @@
-# Natural Language Processing with NLTK
-
-This repository contains code examples and exercises for beginners to learn Natural Language Processing (NLP) using Python and the Natural Language Toolkit (NLTK) library.
 
 ## Introduction
 
@@ -15,62 +12,39 @@ In this repository, you'll find code examples that demonstrate various NLP techn
 - **Part of Speech Tagging**: Tagging each word with its part of speech.
 - **Named Entity Recognition**: Identifying named entities like persons, organizations, locations, etc.
 
+  ## Table of Contents
 
-## Example Code
+- [Segmentation](#segmentation)
+- [Punctuation Removal](#punctuation-removal)
+- [Tokenization](#tokenization)
+- [Removal of Stop Words](#removal-of-stop-words)
+- [Stemming and Lemmatization](#stemming-and-lemmatization)
+- [Part of Speech Tagging](#part-of-speech-tagging)
+- [Named Entity Recognition](#named-entity-recognition)
+- [Examples](#examples)
 
-Here's an example of the code included in this repository:
+
+## Segmentation
+
+In NLP, breaking text into sentences and words is a common initial step. NLTK provides tools to facilitate this.
 
 ```python
-# Import NLTK and download necessary resources
 import nltk
 nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('maxent_ne_chunker')
-nltk.download('words')
-
 from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
-from nltk.stem.wordnet import WordNetLemmatizer
-from nltk import pos_tag, ne_chunk
 
-# Example text
-text = "Millions of people across the UK and beyond have celebrated the coronation of King Charles III..."
-
-# Sentence segmentation
+text = "Millions of people across the UK and beyond have celebrated..."
 sentences = sent_tokenize(text)
-
-# Word tokenization
 words = word_tokenize(sentences[2])
+print(sentences)
+print(words)
 
-# Remove punctuation and lowercase
-words = [w.lower() for w in words if w.isalnum()]
 
-# Remove stopwords
-words = [w for w in words if w not in stopwords.words("english")]
 
-# Stemming
-stemmed = [PorterStemmer().stem(w) for w in words]
 
-# Lemmatization
-lemmatized = [WordNetLemmatizer().lemmatize(w) for w in words]
 
-# Part of speech tagging
-pos_tags = pos_tag(words)
 
-# Named Entity Recognition
-ner_tree = ne_chunk(pos_tags)
 
-print("Original text:", text)
-print("Sentences:", sentences)
-print("Tokenized words:", words)
-print("Stemmed words:", stemmed)
-print("Lemmatized words:", lemmatized)
-print("Part of speech tagging:", pos_tags)
-print("Named Entity Recognition:", ner_tree)
-'''
 
 
 ## Getting Started
