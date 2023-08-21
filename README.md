@@ -22,9 +22,9 @@ In this repository, you'll find code examples that demonstrate various NLP techn
 - [Part of Speech Tagging](#part-of-speech-tagging)
 - [Named Entity Recognition](#named-entity-recognition)
 - [Examples](#examples)
+- [Getting Started] (#getting Started)
 
-
-## Segmentation
+### Segmentation
 
 In NLP, breaking text into sentences and words is a common initial step. NLTK provides tools to facilitate this.
 
@@ -39,6 +39,75 @@ words = word_tokenize(sentences[2])
 print(sentences)
 print(words) python
 ```
+### Punctuation Removal
+Eliminating punctuation is often necessary for various text processing tasks.
+
+```python
+import re
+
+text = re.sub(r"[^a-zA-Z0-9]", " ", sentences[2])
+print(text)
+```
+### Tokenization
+Tokenization involves splitting text into individual words.
+
+```python
+from nltk.tokenize import word_tokenize
+
+words = word_tokenize(text)
+print(words)
+```
+### Removal of Stop Words
+Stop words are common words frequently removed in NLP analysis.
+
+```python
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+
+words = [w for w in words if w not in stopwords.words("english")]
+print(words)
+```
+
+### Stemming and Lemmatization
+Stemming and lemmatization are linguistic processes to reduce words to their base forms.
+
+```python
+nltk.download('averaged_perceptron_tagger')
+pos_tags = nltk.pos_tag(words)
+print(pos_tags)
+```
+
+### Part of Speech Tagging
+Part of speech tagging involves labeling words with their grammatical attributes.
+
+```python
+nltk.download('averaged_perceptron_tagger')
+pos_tags = nltk.pos_tag(words)
+print(pos_tags)
+```
+### Named Entity Recognition
+Named Entity Recognition (NER) identifies named entities within text.
+
+```python
+nltk.download('words')
+from nltk import ne_chunk
+
+ner_tree = ne_chunk(pos_tags)
+print(ner_tree)
+```
+
+### Examples
+Here are a few examples showcasing Named Entity Recognition:
+
+```python
+text = "Twitter CEO Elon Musk arrived at the Staples Center..."
+ner_tree = ne_chunk(pos_tag(word_tokenize(text)))
+print(ner_tree)
+```
+
+Feel free to explore and expand upon these exercises to deepen your understanding of NLP concepts and NLTK library utilization.
+
+Happy learning!
 
 ## Getting Started
 
