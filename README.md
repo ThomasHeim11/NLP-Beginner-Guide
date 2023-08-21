@@ -22,7 +22,8 @@ In this repository, you'll find code examples that demonstrate various NLP techn
 - [Part of Speech Tagging](#part-of-speech-tagging)
 - [Named Entity Recognition](#named-entity-recognition)
 - [Examples](#examples)
-- [Getting Started] (#getting Started)
+- [Getting Started](#getting-started)
+
 
 ### Segmentation
 
