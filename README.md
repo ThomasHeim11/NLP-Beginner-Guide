@@ -117,4 +117,8 @@ To run the code examples in this repository, make sure you have Python and NLTK 
 ```
 pip install nltk
 ```
+# Thank you!
 
+If you appreciated this, feel free to follow !
+
+[![Thomas HeimLinkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thomas-heim11/)
