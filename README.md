@@ -37,18 +37,14 @@ text = "Millions of people across the UK and beyond have celebrated..."
 sentences = sent_tokenize(text)
 words = word_tokenize(sentences[2])
 print(sentences)
-print(words)
-
-
-
-
-
-
-
-
+print(words) python
+```
 
 ## Getting Started
 
 To run the code examples in this repository, make sure you have Python and NLTK installed. You can install NLTK using the following command:
 
-'''pip install nltk''
+```
+pip install nltk
+```
+
